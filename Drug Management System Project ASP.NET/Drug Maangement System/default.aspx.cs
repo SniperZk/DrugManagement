@@ -19,11 +19,12 @@ namespace drugsample
 	/// </summary>
 	public partial class _default : System.Web.UI.Page
 	{
-		//SqlConnection cn=new SqlConnection(ConfigurationSettings.AppSettings["con"]);
-		//SqlConnection cn = new SqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
-		//MySqlConnection cn = new MySqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
-		//string connstring = "server=quanlithuoc.mysql.database.azure.com;uid=vuduckhang;pwd:Khang30102003;database=QuanLiThuoc";
-        MySqlConnection cn = new MySqlConnection("server=quanlithuoc.mysql.database.azure.com;uid=vuduckhang;pwd:Khang30102003;database=QuanLiThuoc");
+        //SqlConnection cn=new SqlConnection(ConfigurationSettings.AppSettings["con"]);
+        //SqlConnection cn = new SqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
+        //MySqlConnection cn = new MySqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
+        //string connstring = "server=quanlithuoc.mysql.database.azure.com;uid=vuduckhang;pwd:Khang30102003;database=QuanLiThuoc";
+        const string connectionString = "Server=QuanLiThuoc; User ID=vuduckhang; Password=Khang30102003; Database=pharmarcy";
+        MySqlConnection cn = new MySqlConnection(connectionString);
 		//string sql = "select * from std_table";
         MySqlDataAdapter da;
 		DataSet ds=new DataSet();
@@ -31,13 +32,29 @@ namespace drugsample
 
 	
 		protected void Page_Load(object sender, System.EventArgs e)
-		{da=new MySqlDataAdapter("select * from login_master",cn);
-			da.Fill(ds,"login");
-	
-		}
+		{/*da=new MySqlDataAdapter("select * from login_master",cn);
+			da.Fill(ds,"login*/
+            try
+            {
+                cn.Open();
+                MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM login_master", cn);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "login");
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception
+                Response.Write("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
 
-		#region Web Form Designer generated code
-		override protected void OnInit(EventArgs e)
+        }
+
+        #region Web Form Designer generated code
+        override protected void OnInit(EventArgs e)
 		{
 			//
 			// CODEGEN: This call is required by the ASP.NET Web Form Designer.
