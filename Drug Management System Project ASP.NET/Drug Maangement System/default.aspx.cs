@@ -23,7 +23,7 @@ namespace drugsample
         //SqlConnection cn = new SqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
         //MySqlConnection cn = new MySqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
         //string connstring = "server=quanlithuoc.mysql.database.azure.com;uid=vuduckhang;pwd:Khang30102003;database=QuanLiThuoc";
-        const string connectionString = "Server=QuanLiThuoc; User ID=vuduckhang; Password=Khang30102003; Database=pharmarcy";
+        const string connectionString = "Server=quanlithuoc; User ID=vuduckhang; Password=Khang30102003; Database=pharmarcy";
         MySqlConnection cn = new MySqlConnection(connectionString);
 		//string sql = "select * from std_table";
         MySqlDataAdapter da;
