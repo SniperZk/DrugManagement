@@ -1,23 +1,27 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\drug\", ".", "{960B0BDD-7732-4A64-9266-C9F18132FC1A}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Drug Maangement System", ".", "{960B0BDD-7732-4A64-9266-C9F18132FC1A}"
 	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
 		Debug.AspNetCompiler.VirtualPath = "/drug"
-		Debug.AspNetCompiler.PhysicalPath = "..\drug\"
+		Debug.AspNetCompiler.PhysicalPath = "..\Drug Maangement System\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\drug\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/drug"
-		Release.AspNetCompiler.PhysicalPath = "..\drug\"
+		Release.AspNetCompiler.PhysicalPath = "..\Drug Maangement System\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\drug\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1033"
+		SlnRelativePath = "..\Drug Maangement System\"
 	EndProjectSection
 EndProject
 Global

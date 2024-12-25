@@ -1,0 +1,1 @@
+{"version":"1.0","connections":[{"details":{"protocol":"mysql","address":{"server":"quanlithuoc.mysql.database.azure.com","database":"pharmarcy"}},"options":{"ReturnSingleDatabase":true}}]}

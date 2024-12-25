@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{960B0BDD-7732-4A64-9266-C9F18132FC1A}|D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System|d:\\codes\\c programs\\c#\\drug-management-system-project-asp.net_\\drug management system project asp.net\\drug maangement system\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{960B0BDD-7732-4A64-9266-C9F18132FC1A}|D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System|solutionrelative:default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{960B0BDD-7732-4A64-9266-C9F18132FC1A}|D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System|D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System\\packages\\MySql.Data.6.7.9\\Readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{960B0BDD-7732-4A64-9266-C9F18132FC1A}|D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System|solutionrelative:packages\\MySql.Data.6.7.9\\Readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Readme.txt",
+              "DocumentMoniker": "D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System\\packages\\MySql.Data.6.7.9\\Readme.txt",
+              "RelativeDocumentMoniker": "packages\\MySql.Data.6.7.9\\Readme.txt",
+              "ToolTip": "D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System\\packages\\MySql.Data.6.7.9\\Readme.txt",
+              "RelativeToolTip": "packages\\MySql.Data.6.7.9\\Readme.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-25T00:59:08.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "default.aspx.cs",
+              "DocumentMoniker": "D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System\\default.aspx.cs",
+              "RelativeDocumentMoniker": "default.aspx.cs",
+              "ToolTip": "D:\\Codes\\C programs\\C#\\Drug-Management-System-Project-ASP.NET_\\Drug Management System Project ASP.NET\\Drug Maangement System\\default.aspx.cs",
+              "RelativeToolTip": "default.aspx.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAiwBoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T18:29:48.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

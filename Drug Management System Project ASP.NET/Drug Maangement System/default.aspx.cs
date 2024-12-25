@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace drugsample
 {
@@ -19,14 +20,18 @@ namespace drugsample
 	public partial class _default : System.Web.UI.Page
 	{
 		//SqlConnection cn=new SqlConnection(ConfigurationSettings.AppSettings["con"]);
-        SqlConnection cn = new SqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
-		SqlDataAdapter da;
+		//SqlConnection cn = new SqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
+		//MySqlConnection cn = new MySqlConnection("Data Source=.; Initial Catalog=drugmanagement; Integrated Security=True");
+		//string connstring = "server=quanlithuoc.mysql.database.azure.com;uid=vuduckhang;pwd:Khang30102003;database=QuanLiThuoc";
+        MySqlConnection cn = new MySqlConnection("server=quanlithuoc.mysql.database.azure.com;uid=vuduckhang;pwd:Khang30102003;database=QuanLiThuoc");
+		//string sql = "select * from std_table";
+        MySqlDataAdapter da;
 		DataSet ds=new DataSet();
-		SqlCommand cmd;
+		MySqlCommand cmd;
 
 	
 		protected void Page_Load(object sender, System.EventArgs e)
-		{da=new SqlDataAdapter("select * from login_master",cn);
+		{da=new MySqlDataAdapter("select * from login_master",cn);
 			da.Fill(ds,"login");
 	
 		}
@@ -81,7 +86,7 @@ namespace drugsample
                     int p;
                     p = Convert.ToInt32(a.GetValue(2));
 
-                    cmd = new SqlCommand("select profile_name from profile_master where profile_id=" + p + "", cn);
+                    cmd = new MySqlCommand("select profile_name from profile_master where profile_id=" + p + "", cn);
                     cn.Open();
                     string profile_name = cmd.ExecuteScalar().ToString();
                     cn.Close();
@@ -112,10 +117,10 @@ namespace drugsample
 		}
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            //SqlCommand cmd = new SqlCommand("Select count(*) from Login_master where User_Name='" + txt_name.Text + "' and Password='" + txt_pwd.Text + "'", con);
-            //con.Open();
-            //int count = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-            //con.Close();
+            MySqlCommand cmd = new MySqlCommand("Select count(*) from Login_master where User_Name='" + txt_name.Text + "' and Password='" + txt_pwd.Text + "'", cn);
+            cn.Open();
+            int count = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+            cn.Close();
            
             Server.Transfer("change_password.aspx");
 
